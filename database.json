@@ -1,16 +1,16 @@
 {
   "dev": {
     "driver": "pg",
-    "host": "127.0.0.1",
-    "database": "store_api",
-    "user": "abdulrahmansbq",
-    "password": "qwer1234"
+    "user": {"ENV":  "POSTGRES_USER"},
+    "password": {"ENV":  "POSTGRES_PASSWORD"},
+    "host": {"ENV":  "POSTGRES_HOST"},
+    "database": {"ENV":  "POSTGRES_DB"}
   },
   "test": {
     "driver": "pg",
-    "host": "127.0.0.1",
-    "database": "store_api_test",
-    "user": "abdulrahmansbq",
-    "password": "qwer1234"
+    "user": {"ENV":  "POSTGRES_USER"},
+    "password": {"ENV":  "POSTGRES_PASSWORD"},
+    "host": {"ENV":  "POSTGRES_HOST"},
+    "database": {"ENV":  "POSTGRES_DB_TEST"}
   }
 }

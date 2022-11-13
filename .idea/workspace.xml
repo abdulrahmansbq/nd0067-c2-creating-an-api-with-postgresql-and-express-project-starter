@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c73da49e-5922-4857-9a91-c443434c16e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/sqls/20221113150751-order-products-table-down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/handlers/orders.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/handlers/products.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/order.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REQUIREMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/REQUIREMENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/20221113150751-orders-products-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20221113150751-order-products-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113145536-products-table-down.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113145536-products-table-down.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113145636-users-table-down.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113145636-users-table-down.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113145636-users-table-up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113145636-users-table-up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113150242-orders-table-down.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113150242-orders-table-down.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113150242-orders-table-up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113150242-orders-table-up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113150751-orders-products-table-down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/sqls/20221113150751-orders-products-table-up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/sqls/20221113150751-order-products-table-up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/var/www/html/task2/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/var/www/html/task2/src/handlers",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/var/www/html/task2/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/handlers" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,12 +77,22 @@
       <option name="presentableId" value="Default" />
       <updated>1668298794418</updated>
       <workItem from="1668298795576" duration="1733000" />
-      <workItem from="1668350814984" duration="2706000" />
+      <workItem from="1668350814984" duration="20814000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/database.js" />
+        <option value="$PROJECT_DIR$/src/server.js" />
+        <option value="$PROJECT_DIR$/src/models/order.js" />
+        <option value="$PROJECT_DIR$/src/models/product.js" />
+        <option value="$PROJECT_DIR$/src/models/user.js" />
+        <option value="$PROJECT_DIR$/src/handlers/products.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
