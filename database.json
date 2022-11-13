@@ -1,0 +1,16 @@
+{
+  "dev": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "database": "store_api",
+    "user": "abdulrahmansbq",
+    "password": "qwer1234"
+  },
+  "test": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "database": "store_api_test",
+    "user": "abdulrahmansbq",
+    "password": "qwer1234"
+  }
+}
