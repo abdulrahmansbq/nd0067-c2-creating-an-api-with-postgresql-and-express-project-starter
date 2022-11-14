@@ -4,7 +4,7 @@
     "user": {"ENV":  "POSTGRES_USER"},
     "password": {"ENV":  "POSTGRES_PASSWORD"},
     "host": {"ENV":  "POSTGRES_HOST"},
-    "database": {"ENV":  "POSTGRES_DB"}
+    "database": "store_api_dev"
   },
   "test": {
     "driver": "pg",
