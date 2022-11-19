@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c73da49e-5922-4857-9a91-c443434c16e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/models/test/order_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/models/tests/order_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/models/tests/product_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/models/tests/user_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tests/order_spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tests/product_spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tests/user_spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REQUIREMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/REQUIREMENTS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/database.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/handlers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/handlers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/products.js" afterDir="false" />
@@ -23,10 +15,7 @@
       <change beforePath="$PROJECT_DIR$/dist/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/support/jasmine.json" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/jasmine.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/html/task2/src/models/tests",
+    "last_opened_file_path": "/var/www/html/task2",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/var/www/html/task2/node_modules/prettier",
     "ts.external.directory.path": "/var/www/html/task2/node_modules/typescript/lib",
@@ -66,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/models/tests" />
       <recent name="$PROJECT_DIR$/src/handlers" />
       <recent name="$PROJECT_DIR$/src/models" />
@@ -81,7 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668298794418</updated>
       <workItem from="1668298795576" duration="1733000" />
-      <workItem from="1668350814984" duration="32141000" />
+      <workItem from="1668350814984" duration="32265000" />
+      <workItem from="1668884743280" duration="2679000" />
     </task>
     <servers />
   </component>
