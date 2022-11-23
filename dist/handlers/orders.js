@@ -29,4 +29,7 @@ const show = async (_req, res) => {
 const order_routes = (app) => {
     app.get("/order", show);
 };
-exports.default = order_routes;
+exports.default = {
+    order_routes,
+    show
+};

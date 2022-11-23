@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c73da49e-5922-4857-9a91-c443434c16e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/handlers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/handlers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tests/order_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/order_spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tests/product_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/product_spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tests/user_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/user_spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/orders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/orders.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/products.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/tests/order_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/order_spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/tests/product_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/product_spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/tests/user_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/user_spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +74,7 @@
       <workItem from="1668298795576" duration="1733000" />
       <workItem from="1668350814984" duration="32265000" />
       <workItem from="1668884743280" duration="2857000" />
-      <workItem from="1669231180851" duration="2736000" />
+      <workItem from="1669231180851" duration="6397000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
 import { UserStore } from "../user";
+import usersHandler from "../../handlers/users";
 
 const store = new UserStore();
 
@@ -44,4 +45,20 @@ describe("User model", () => {
         const result = await store.show("1");
         expect(result.id).toEqual(1);
     });
-})
+});
+
+
+
+describe("Users handler", () => {
+    it("should have an index method", () => {
+        expect(usersHandler.index).toBeDefined();
+    });
+
+    it("should have a show method", () => {
+        expect(usersHandler.show).toBeDefined();
+    });
+
+    it("should have a create method", () => {
+        expect(usersHandler.create).toBeDefined();
+    });
+});

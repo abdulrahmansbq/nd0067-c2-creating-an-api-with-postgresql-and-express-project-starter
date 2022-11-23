@@ -85,4 +85,10 @@ const product_routes = (app: express.Application) => {
   app.post("/products/addProduct", addProduct);
 };
 
-export default product_routes;
+export default {
+  product_routes,
+  addProduct,
+  show,
+  index,
+  create
+};

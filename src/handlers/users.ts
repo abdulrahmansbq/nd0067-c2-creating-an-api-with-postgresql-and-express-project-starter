@@ -69,4 +69,9 @@ const user_routes = (app: express.Application) => {
   app.get("/users/:id", show);
 };
 
-export default user_routes;
+export default {
+  user_routes,
+  create,
+  show,
+  index
+};

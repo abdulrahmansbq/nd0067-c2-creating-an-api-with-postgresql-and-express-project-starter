@@ -17,9 +17,9 @@ const corsOptions = {
 };
 app.use((0, cors_1.default)(corsOptions));
 app.use(body_parser_1.default.json());
-(0, products_1.default)(app);
-(0, users_1.default)(app);
-(0, orders_1.default)(app);
+products_1.default.product_routes(app);
+users_1.default.user_routes(app);
+orders_1.default.order_routes(app);
 app.get("/", function (req, res) {
     res.send("Hello World!");
 });

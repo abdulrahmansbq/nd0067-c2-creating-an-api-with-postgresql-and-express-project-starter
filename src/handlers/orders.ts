@@ -30,4 +30,7 @@ const order_routes = (app: express.Application) => {
   app.get("/order", show);
 };
 
-export default order_routes;
+export default {
+  order_routes,
+  show
+};

@@ -65,4 +65,9 @@ const user_routes = (app) => {
     app.post("/users", create);
     app.get("/users/:id", show);
 };
-exports.default = user_routes;
+exports.default = {
+    user_routes,
+    create,
+    show,
+    index
+};

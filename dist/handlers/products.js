@@ -77,4 +77,10 @@ const product_routes = (app) => {
     app.get("/products/:id", show);
     app.post("/products/addProduct", addProduct);
 };
-exports.default = product_routes;
+exports.default = {
+    product_routes,
+    addProduct,
+    show,
+    index,
+    create
+};

@@ -1,5 +1,5 @@
 import { Product, ProductStore } from "../product";
-
+import productsHandler from "../../handlers/products"
 const store = new ProductStore();
 
 describe("Product model", () => {
@@ -46,7 +46,6 @@ describe("Product model", () => {
         }]);
     });
 
-
     it("index should return empty array", async () => {
         const result = await store.show("1");
         expect(result).toEqual({
@@ -56,4 +55,22 @@ describe("Product model", () => {
         });
     });
 
-})
+});
+
+describe("Product handler", () => {
+    it("should have an index method", () => {
+        expect(productsHandler.index).toBeDefined();
+    });
+
+    it("should have a show method", () => {
+        expect(productsHandler.show).toBeDefined();
+    });
+
+    it("should have a create method", () => {
+        expect(productsHandler.create).toBeDefined();
+    });
+
+    it("should have an addProduct method", () => {
+        expect(productsHandler.addProduct).toBeDefined();
+    });
+});

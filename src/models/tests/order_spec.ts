@@ -1,4 +1,5 @@
 import { Order,OrderStore } from "../order";
+import ordersHandler from "../../handlers/orders";
 
 const store = new OrderStore();
 
@@ -11,4 +12,14 @@ describe("Order model", () => {
         const result = await store.show("5");
         expect(result).toEqual([]);
     });
-})
+});
+
+
+
+
+
+describe("Orders handler", () => {
+    it("should have a show method", () => {
+        expect(ordersHandler.show).toBeDefined();
+    });
+});

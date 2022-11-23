@@ -1,6 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const product_1 = require("../product");
+const products_1 = __importDefault(require("../../handlers/products"));
 const store = new product_1.ProductStore();
 describe("Product model", () => {
     it("should have an index method", () => {
@@ -46,5 +50,19 @@ describe("Product model", () => {
             name: "Bottle of water",
             price: 1
         });
+    });
+});
+describe("Product handler", () => {
+    it("should have an index method", () => {
+        expect(products_1.default.index).toBeDefined();
+    });
+    it("should have a show method", () => {
+        expect(products_1.default.show).toBeDefined();
+    });
+    it("should have a create method", () => {
+        expect(products_1.default.create).toBeDefined();
+    });
+    it("should have an addProduct method", () => {
+        expect(products_1.default.addProduct).toBeDefined();
     });
 });
