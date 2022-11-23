@@ -9,6 +9,34 @@ Firstly you need to install the packages using:
 
 Then kindly go to the PSQL and create 2 DBs with the names (store_api_dev, store_api_test).
 
+You can create them using the below Code
+
+**Create user**
+
+```shell
+CREATE USER full_stack_user WITH PASSWORD 'password1234';
+```
+
+**Create Databases**
+
+```shell
+#Dev Database
+CREATE DATABASE store_api_dev;
+
+#Dev Database
+CREATE DATABASE store_api_test;
+```
+
+
+**GRANT all privileges to the user in the created databases**
+
+```shell
+GRANT ALL PRIVILEGES ON DATABASE store_api_dev TO full_stack_user;
+GRANT ALL PRIVILEGES ON DATABASE store_api_test TO full_stack_user;
+```
+
+
+
 Then, you have to change the .env file to match your database credentials (Username, password, host, etc...).
 
 There is a ".env.example" file provided please put the credentials then rename it to be ".env"
