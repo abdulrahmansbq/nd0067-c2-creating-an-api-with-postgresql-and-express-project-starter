@@ -15,22 +15,41 @@ const create = async (req: Request, res: Response) => {
     res.json("Access denied, invalid token");
     return;
   }
-  const product: ProductWithoutId = {
-    name: req.body.name,
-    price: <number>req.body.price,
-  };
-  const products = await store.create(product);
-  res.json(products);
+
+  try {
+    const product: ProductWithoutId = {
+      name: req.body.name,
+      price: <number>req.body.price,
+    };
+    const products = await store.create(product);
+    res.json(products);
+  } catch (err) {
+    res.status(400);
+    res.json("Something went wrong while storing the product");
+    return;
+  }
 };
 
 const index = async (_req: Request, res: Response) => {
-  const products = await store.index();
-  res.json(products);
+  try {
+    const products = await store.index();
+    res.json(products);
+  } catch (err) {
+    res.status(400);
+    res.json("Something went wrong while fetching the products");
+    return;
+  }
 };
 
 const show = async (req: Request, res: Response) => {
-  const products = await store.show(<string>req.params.id);
-  res.json(products);
+  try {
+    const products = await store.show(<string>req.params.id);
+    res.json(products);
+  } catch (err) {
+    res.status(400);
+    res.json("Something went wrong while fetching the product");
+    return;
+  }
 };
 
 const addProduct = async (req: Request, res: Response) => {
@@ -45,12 +64,18 @@ const addProduct = async (req: Request, res: Response) => {
     res.json("Access denied, invalid token");
     return;
   }
-  const products = await store.addProduct(
-    <number>parseInt(req.body.quantity),
-    <string>payload.user,
-    <string>req.body.product_id
-  );
-  res.json(products);
+  try {
+    const products = await store.addProduct(
+      <number>parseInt(req.body.quantity),
+      <string>payload.user,
+      <string>req.body.product_id
+    );
+    res.json(products);
+  } catch (err) {
+    res.status(400);
+    res.json("Something went wrong while adding the product");
+    return;
+  }
 };
 
 const product_routes = (app: express.Application) => {

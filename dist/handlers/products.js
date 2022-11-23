@@ -15,20 +15,41 @@ const create = async (req, res) => {
         res.json("Access denied, invalid token");
         return;
     }
-    const product = {
-        name: req.body.name,
-        price: req.body.price,
-    };
-    const products = await store.create(product);
-    res.json(products);
+    try {
+        const product = {
+            name: req.body.name,
+            price: req.body.price,
+        };
+        const products = await store.create(product);
+        res.json(products);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while storing the product");
+        return;
+    }
 };
 const index = async (_req, res) => {
-    const products = await store.index();
-    res.json(products);
+    try {
+        const products = await store.index();
+        res.json(products);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while fetching the products");
+        return;
+    }
 };
 const show = async (req, res) => {
-    const products = await store.show(req.params.id);
-    res.json(products);
+    try {
+        const products = await store.show(req.params.id);
+        res.json(products);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while fetching the product");
+        return;
+    }
 };
 const addProduct = async (req, res) => {
     let payload;
@@ -40,8 +61,15 @@ const addProduct = async (req, res) => {
         res.json("Access denied, invalid token");
         return;
     }
-    const products = await store.addProduct(parseInt(req.body.quantity), payload.user, req.body.product_id);
-    res.json(products);
+    try {
+        const products = await store.addProduct(parseInt(req.body.quantity), payload.user, req.body.product_id);
+        res.json(products);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while adding the product");
+        return;
+    }
 };
 const product_routes = (app) => {
     app.get("/products", index);

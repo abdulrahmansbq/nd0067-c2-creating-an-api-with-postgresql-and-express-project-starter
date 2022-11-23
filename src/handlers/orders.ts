@@ -16,8 +16,14 @@ const show = async (_req: Request, res: Response) => {
     res.json("Access denied, invalid token");
     return;
   }
-  const orders = await store.show(<string>payload.user);
-  res.json(orders);
+  try {
+    const orders = await store.show(<string>payload.user);
+    res.json(orders);
+  } catch (err) {
+    res.status(400);
+    res.json("Something went wrong while fetching the order");
+    return;
+  }
 };
 
 const order_routes = (app: express.Application) => {

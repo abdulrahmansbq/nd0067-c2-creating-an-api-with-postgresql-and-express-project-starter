@@ -15,8 +15,15 @@ const index = async (req, res) => {
         res.json("Access denied, invalid token");
         return;
     }
-    const users = await store.index();
-    res.json(users);
+    try {
+        const users = await store.index();
+        res.json(users);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while fetching the users");
+        return;
+    }
 };
 const show = async (req, res) => {
     try {
@@ -27,8 +34,15 @@ const show = async (req, res) => {
         res.json("Access denied, invalid token");
         return;
     }
-    const users = await store.show(req.params.id);
-    res.json(users);
+    try {
+        const users = await store.show(req.params.id);
+        res.json(users);
+    }
+    catch (err) {
+        res.status(400);
+        res.json("Something went wrong while fetching the users");
+        return;
+    }
 };
 const create = async (req, res) => {
     const user = {
