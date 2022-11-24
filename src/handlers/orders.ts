@@ -20,7 +20,7 @@ const show = async (_req: Request, res: Response) => {
     const orders = await store.show(<string>payload.user);
     res.json(orders);
   } catch (err) {
-    res.status(400);
+    res.status(500);
     res.json("Something went wrong while fetching the order");
     return;
   }

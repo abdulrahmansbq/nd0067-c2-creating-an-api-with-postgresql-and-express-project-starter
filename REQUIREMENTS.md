@@ -17,6 +17,8 @@ have agreed meet the requirements of the application.
     - 'products/:id' [GET]
 - Create [token required]
     - 'products' [POST] [with authorization token as a header]
+- Add Product to an order
+  - '/products/addProduct' [POST]
 - [OPTIONAL] Top 5 most popular products
 - [OPTIONAL] Products by category (args: product category)
 

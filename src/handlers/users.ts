@@ -19,7 +19,7 @@ const index = async (req: Request, res: Response) => {
     const users = await store.index();
     res.json(users);
   } catch (err) {
-    res.status(400);
+    res.status(500);
     res.json("Something went wrong while fetching the users");
     return;
   }
@@ -41,7 +41,7 @@ const show = async (req: Request, res: Response) => {
     const users = await store.show(<string>req.params.id);
     res.json(users);
   } catch (err) {
-    res.status(400);
+    res.status(500);
     res.json("Something went wrong while fetching the users");
     return;
   }
@@ -58,7 +58,7 @@ const create = async (req: Request, res: Response) => {
     var token = jwt.sign({ user: newUser }, <string>process.env.TOKEN_SECRET);
     res.json(token);
   } catch (err) {
-    res.status(400);
+    res.status(500);
     res.json({ error: "something went wrong" });
   }
 };

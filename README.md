@@ -39,6 +39,8 @@ GRANT ALL PRIVILEGES ON DATABASE store_api_test TO full_stack_user;
 
 Then, you have to change the .env file to match your database credentials (Username, password, host, etc...).
 
+Notice that the database port is 5432, and backend port is 3000, all these settings can be changed in the .env file
+
 There is a ".env.example" file provided please put the credentials then rename it to be ".env"
 
 After that to test the application you can run

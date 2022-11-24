@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c73da49e-5922-4857-9a91-c443434c16e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/handlers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/handlers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/handlers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/tests/order_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/order_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/tests/product_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/product_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/tests/user_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/tests/user_spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REQUIREMENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/REQUIREMENTS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/orders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/orders.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/products.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handlers/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tests/order_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/order_spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tests/product_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/product_spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tests/user_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tests/user_spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/html/task2",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/var/www/html/task2/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/var/www/html/task2/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/task2&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/var/www/html/task2/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/var/www/html/task2/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -74,7 +66,8 @@
       <workItem from="1668298795576" duration="1733000" />
       <workItem from="1668350814984" duration="32265000" />
       <workItem from="1668884743280" duration="2857000" />
-      <workItem from="1669231180851" duration="6397000" />
+      <workItem from="1669231180851" duration="6634000" />
+      <workItem from="1669295142881" duration="503000" />
     </task>
     <servers />
   </component>
