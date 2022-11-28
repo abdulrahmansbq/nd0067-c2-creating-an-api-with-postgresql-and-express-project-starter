@@ -1,5 +1,8 @@
 import { Product, ProductStore } from "../product";
 import productsHandler from "../../handlers/products"
+import supertest from "supertest";
+import app from "../../server";
+import {response} from "express";
 const store = new ProductStore();
 
 describe("Product model", () => {
@@ -58,6 +61,17 @@ describe("Product model", () => {
 });
 
 describe("Product handler", () => {
+    let auth: string;
+    beforeAll(() => {
+        supertest(app)
+            .post('/users')
+            .send({firstName: "Test", lastName: "Account", password: "qwer1234"})
+            .set('Content-Type', 'application/json')
+            .set('Accept', 'application/json')
+            .then(response => {
+                auth = response.body;
+            })
+    })
     it("should have an index method", () => {
         expect(productsHandler.index).toBeDefined();
     });
@@ -72,5 +86,53 @@ describe("Product handler", () => {
 
     it("should have an addProduct method", () => {
         expect(productsHandler.addProduct).toBeDefined();
+    });
+
+    it("index should respond with 200 code", () => {
+        return supertest(app)
+            .get('/products')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200);
+    });
+
+    it("show should have a json response with status 200", () => {
+        return supertest(app)
+            .get('/products/1')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200);
+    });
+
+    it("show should have an error code 404", () => {
+        return supertest(app)
+            .get('/products/489')
+            .expect(404);
+    });
+
+    it("create should have a create method", () => {
+        return supertest(app)
+            .post('/products')
+            .send({
+                name: "Chips",
+                price: 5
+            })
+            .set('authorization', auth)
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200);
+    });
+
+    it("addProduct should have an addProduct method", () => {
+        return supertest(app)
+            .post('/products/addProduct')
+            .send({
+                product_id: 2,
+                quantity: 1
+            })
+            .set('authorization', auth)
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200);
     });
 });

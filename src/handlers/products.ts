@@ -44,7 +44,12 @@ const index = async (_req: Request, res: Response) => {
 const show = async (req: Request, res: Response) => {
   try {
     const products = await store.show(<string>req.params.id);
-    res.json(products);
+    if(products === undefined){
+      res.status(404);
+      res.json("Not Found");
+    }else{
+      res.json(products);
+    }
   } catch (err) {
     res.status(500);
     res.json("Something went wrong while fetching the product");

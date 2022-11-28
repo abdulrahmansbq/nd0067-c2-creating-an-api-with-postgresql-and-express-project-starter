@@ -21,7 +21,7 @@ const show = async (_req, res) => {
         res.json(orders);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while fetching the order");
         return;
     }

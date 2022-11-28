@@ -24,7 +24,7 @@ const create = async (req, res) => {
         res.json(products);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while storing the product");
         return;
     }
@@ -35,7 +35,7 @@ const index = async (_req, res) => {
         res.json(products);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while fetching the products");
         return;
     }
@@ -43,10 +43,16 @@ const index = async (_req, res) => {
 const show = async (req, res) => {
     try {
         const products = await store.show(req.params.id);
-        res.json(products);
+        if (products === undefined) {
+            res.status(404);
+            res.json("Not Found");
+        }
+        else {
+            res.json(products);
+        }
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while fetching the product");
         return;
     }
@@ -66,7 +72,7 @@ const addProduct = async (req, res) => {
         res.json(products);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while adding the product");
         return;
     }

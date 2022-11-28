@@ -20,7 +20,7 @@ const index = async (req, res) => {
         res.json(users);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while fetching the users");
         return;
     }
@@ -36,10 +36,16 @@ const show = async (req, res) => {
     }
     try {
         const users = await store.show(req.params.id);
-        res.json(users);
+        if (users === undefined) {
+            res.status(404);
+            res.json("Not Found");
+        }
+        else {
+            res.json(users);
+        }
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json("Something went wrong while fetching the users");
         return;
     }
@@ -56,7 +62,7 @@ const create = async (req, res) => {
         res.json(token);
     }
     catch (err) {
-        res.status(400);
+        res.status(500);
         res.json({ error: "something went wrong" });
     }
 };

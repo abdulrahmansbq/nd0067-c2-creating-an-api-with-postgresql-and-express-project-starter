@@ -39,7 +39,12 @@ const show = async (req: Request, res: Response) => {
 
   try{
     const users = await store.show(<string>req.params.id);
-    res.json(users);
+    if(users === undefined){
+      res.status(404);
+      res.json("Not Found");
+    }else{
+      res.json(users);
+    }
   } catch (err) {
     res.status(500);
     res.json("Something went wrong while fetching the users");
